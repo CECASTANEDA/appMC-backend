@@ -9,15 +9,13 @@ import com.mitocode.repo.IPersonaRepo;
 import com.mitocode.service.IPersonaService;
 
 @Service
-public class PersonaServiceImpl extends CRUDImpl<Persona, Integer> implements IPersonaService{
+public class PersonaServiceImpl extends CRUDImpl<Persona, Integer> implements IPersonaService {
 
 	@Autowired
-	private IPersonaRepo repo;	
+	private IPersonaRepo repo;
 
 	@Override
 	protected IGenericRepo<Persona, Integer> getRepo() {
 		return repo;
 	}
-
-
 }
